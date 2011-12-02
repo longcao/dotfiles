@@ -270,6 +270,8 @@ EXEC   01;32
 .log   00;33
 .ppt   00;33
 .PPT   00;33
+.csv   00;33
+.tsv   00;33
 
 # script and source code (cyan)
 .a     01;36

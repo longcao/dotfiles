@@ -62,3 +62,4 @@ function! StripWhitespace ()
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
+colorscheme molokai
