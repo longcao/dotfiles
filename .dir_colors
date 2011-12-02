@@ -1,4 +1,4 @@
-uthor: Andreas Textor <textor.andreas@googlemail.com>
+Author: Andreas Textor <textor.andreas@googlemail.com>
 # Last change: 14.02.2010
 #
 # COLOR needs one of these arguments: 'tty' colorizes output to ttys, but not
@@ -60,7 +60,7 @@ TERM xterm-color
 TERM xterm-debian
 
 # EIGHTBIT, followed by '1' for on, '0' for off. (8-bit output)
-EIGHTBIT 1
+EIGHTBIT 1 
 
 # Below are the color init strings for the basic file types. A color init
 # string consists of one or more of the following numeric codes:
@@ -75,7 +75,7 @@ NORMAL 00        # global default, although everything should be something.
 FILE   00        # normal file
 RESET  0         # reset to "normal" color
 DIR    01;34     # directory
-LINK   01;36     # symbolic link (If you set this to 'target' instead of a numerical value, the color is as for the file pointed to.)
+LINK   target     # symbolic link (If you set this to 'target' instead of a numerical value, the color is as for the file pointed to.)
 #MULTIHARDLINK 00 # regular file with more than one link
 FIFO   40;33     # pipe
 SOCK   01;35     # socket
@@ -271,38 +271,38 @@ EXEC   01;32
 .ppt   00;33
 .PPT   00;33
 
-# script and source code (white)
-.a     01;37
-.am    01;37
-.c     01;37
-.cc    01;37
-.cpp   01;37
-.css   01;37
-.dat   01;37
-.h     01;37
-.hh    01;37
-.htm   01;37
-.html  01;37
-.HTM   01;37
-.HTML  01;37
-.in    01;37
-.ini   01;37
-.jar   01;37
-.java  01;37
-.js    01;37
-.la    01;37
-.lo    01;37
-.m4    01;37
-.moc   01;37
-.php   01;37
-.php3  01;37
-.php4  01;37
-.s     01;37
-.S     01;37
-.spec  01;37
-.xml   01;37
-.sh    01;37
-.pl    01;37
-.perl  01;37
-.rb    01;37
-.scala 01;37
+# script and source code (cyan)
+.a     01;36
+.am    01;36
+.c     01;36
+.cc    01;36
+.cpp   01;36
+.css   01;36
+.dat   01;36
+.h     01;36
+.hh    01;36
+.htm   01;36
+.html  01;36
+.HTM   01;36
+.HTML  01;36
+.in    01;36
+.ini   01;36
+.jar   01;36
+.java  01;36
+.js    01;36
+.la    01;36
+.lo    01;36
+.m4    01;36
+.moc   01;36
+.php   01;36
+.php3  01;36
+.php4  01;36
+.s     01;36
+.S     01;36
+.spec  01;36
+.xml   01;36
+.sh    01;36
+.pl    01;36
+.perl  01;36
+.rb    01;36
+.scala 01;36
