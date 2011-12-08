@@ -1,5 +1,18 @@
 " Make vim more useful
 set nocompatible
+" Required by Vundle, will be turned on later
+filetype off
+" Set runtime path with Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle 
+Bundle 'gmarik/vundle'
+" Vundle bundles
+Bundle 'scrooloose/nerdtree'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'shawncplus/phpcomplete.vim'
+" Required by Vundle
+filetype plugin indent on
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode

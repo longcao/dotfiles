@@ -97,3 +97,6 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
+# Copy the current directory to clipboard
+alias cpd="pwd | pbcopy"
+
