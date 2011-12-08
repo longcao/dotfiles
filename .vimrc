@@ -28,11 +28,17 @@ let mapleader=","
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
-
 " Enable line numbers
 set number
 " Enable syntax highlighting
 syntax on
+" Enable autocompletion
+set omnifunc=syntaxcomplete#Complete
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType phtml set omnifunc=phpcomplete#CompletePHP
+" Closes omni completion preview window when exiting insert mode or moving
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
@@ -77,7 +83,6 @@ noremap <leader>ss :call StripWhitespace ()<CR>
 
 " Set color scheme
 colorscheme molokai
-
 " Show commands as you type them
 set showcmd
 
