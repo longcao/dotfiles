@@ -84,5 +84,5 @@ noremap <leader>ss :call StripWhitespace ()<CR>
 " Set color scheme
 colorscheme molokai
 " Show commands as you type them
-set showcmd
+" set showcmd
 
