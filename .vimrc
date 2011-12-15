@@ -6,12 +6,10 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 " let Vundle manage Vundle 
-" Bundle 'gmarik/vundle'
+Bundle 'gmarik/vundle'
 " Vundle bundles
-" Bundle 'scrooloose/nerdtree'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'shawncplus/phpcomplete.vim'
-" Bundle 'wincent/Command-T'
 " Required by Vundle
 filetype plugin indent on
 " Enhance command-line completion
