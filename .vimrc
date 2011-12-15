@@ -9,6 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 " Vundle bundles
 Bundle 'AutoClose'
+Bundle 'hexHighlight.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'shawncplus/phpcomplete.vim'
 " Required by Vundle
@@ -47,8 +48,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 " Show “invisible” characters
-" set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-" set list
+" "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+" "set list
 " Highlight searches
 set hlsearch
 " Ignore case of searches
