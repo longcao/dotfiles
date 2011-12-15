@@ -8,6 +8,7 @@ call vundle#rc()
 " let Vundle manage Vundle 
 Bundle 'gmarik/vundle'
 " Vundle bundles
+Bundle 'AutoClose'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'shawncplus/phpcomplete.vim'
 " Required by Vundle
@@ -40,8 +41,11 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 " Highlight current line
 set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
+" Make tabs as wide as 4 spaces
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 " Show “invisible” characters
 " set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 " set list
