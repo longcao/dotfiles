@@ -92,3 +92,6 @@ set gfn=Monaco:h10
 " Show commands as you type them
 " set showcmd
 
+" Enable ctags
+set tags+=~/.vim/tags/sf-tags.tag
+
