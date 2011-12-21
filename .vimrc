@@ -91,7 +91,10 @@ colorscheme molokai
 set gfn=Monaco:h10
 " Show commands as you type them
 " set showcmd
-
 " Enable ctags
 set tags+=~/.vim/tags/sf-tags.tag
+" Enable copying to Mac clipboard
+set clipboard=unnamed,unnamedplus,autoselect
+" Shortcut to paste from system clipboard
+nnoremap <silent> <Leader>p "+p
 
