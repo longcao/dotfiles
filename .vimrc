@@ -1,80 +1,118 @@
-" Make vim more useful
+" Enable vim
 set nocompatible
+
+"====================[ Vundle ]===================="
 " Required by Vundle, will be turned on later
 filetype off
+
 " Set runtime path with Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+
 " let Vundle manage Vundle 
 Bundle 'gmarik/vundle'
+
 " Vundle bundles
 Bundle 'AutoClose'
 Bundle 'hexHighlight.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'Syntastic'
+Bundle 'ervandew/supertab'
+
 " Required by Vundle
 filetype plugin indent on
-" Enhance command-line completion
-set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
-" Optimize for fast terminal connections
-set ttyfast
-" Add the g flag to search/replace by default
-set gdefault
-" Use UTF-8 without BOM
-set encoding=utf-8 nobomb
-" Change mapleader
-let mapleader=","
-" Don’t add empty newlines at the end of files
-set binary
-set noeol
-" Enable line numbers
-set number
-" Enable syntax highlighting
-syntax on
+
+"====================[ Autocompletion ]===================="
 " Enable autocompletion
 set omnifunc=syntaxcomplete#Complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType phtml set omnifunc=phpcomplete#CompletePHP
+
 " Closes omni completion preview window when exiting insert mode or moving
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+
+" Enhance command-line completion
+set wildmenu
+
+"====================[ Lines ]===================="
+" Don’t add empty newlines at the end of files
+set binary
+set noeol
+
+" Enable line numbers
+set number
+
 " Highlight current line
 set cursorline
-" Make tabs as wide as 4 spaces
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-" Show “invisible” characters
-" "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-" "set list
+
+"====================[ Search ]===================="
 " Highlight searches
 set hlsearch
+
 " Ignore case of searches
 set ignorecase
+
 " Highlight dynamically as pattern is typed
 set incsearch
-" Always show status line
-set laststatus=2
-" Enable mouse in all modes
-set mouse=a
-" Disable error bells
-set noerrorbells
+
+" Add the g flag to search/replace by default
+set gdefault
+
+"====================[ Movement ]===================="
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
-" Show the cursor position
-set ruler
-" Don’t show the intro message when starting vim
-set shortmess=atI
-" Show the current mode
-set showmode
-" Show the filename in the window titlebar
-set title
+
+" Allow cursor keys in insert mode
+set esckeys
+
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
+"====================[ Whitespace ]===================="
+" Make tabs as wide as 4 spaces
+set smartindent
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+" Show “invisible” characters
+" "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+" "set list
+
+"====================[ Appearance ]===================="
+" Set color scheme
+colorscheme molokai
+
+" Default font for MacVim
+set gfn=Monaco:h10
+
+"====================[ Ctags ]===================="
+" Enable ctags
+set tags+=~/.vim/tags/sf-tags.tag
+
+" Remaps tags to allow for dropdown menu when matches > 1
+noremap <C-]> g<C-]>
+
+"====================[ Remaps ]===================="
+" Change mapleader
+let mapleader=","
+
+"====================[ Status Line ]===================="
+" Always show status line
+set laststatus=2
+
+" Show the cursor position
+set ruler
+
+" Show commands as you type them
+set showcmd
+
+" Show the current mode
+set showmode
+
+"====================[ Functions ]===================="
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
   let save_cursor = getpos(".")
@@ -85,16 +123,31 @@ function! StripWhitespace ()
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
-" Set color scheme
-colorscheme molokai
-" Default font for MacVim
-set gfn=Monaco:h10
-" Show commands as you type them
-" set showcmd
-" Enable ctags
-set tags+=~/.vim/tags/sf-tags.tag
+"====================[ Miscellaneous ]===================="
+" Don’t show the intro message when starting vim
+set shortmess=atI
+
+" Enable mouse in all modes
+set mouse=a
+
+" Optimize for fast terminal connections
+set ttyfast
+
+" Show the filename in the window titlebar
+set title
+
+" Use UTF-8 without BOM
+set encoding=utf-8 nobomb
+
+" Disable error bells
+set noerrorbells
+
+" Enable syntax highlighting
+syntax on
+
 " Enable copying to Mac clipboard
 set clipboard=unnamed,unnamedplus,autoselect
+
 " Shortcut to paste from system clipboard
 nnoremap <silent> <Leader>p "+p
 
