@@ -100,3 +100,10 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 # Copy the current directory to clipboard
 alias cpd="pwd | pbcopy"
 
+# Use php from MAMP
+alias php="/Applications/MAMP/bin/php/php5.3.6/bin/php"
+alias phpi="/usr/bin/php -a"
+
+# grep color
+alias grep="grep --color='auto'"
+

@@ -19,6 +19,9 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'Syntastic'
 Bundle 'ervandew/supertab'
+Bundle 'taglist.vim'
+Bundle 'phtml.vim'
+Bundle 'pangloss/vim-javascript'
 
 " Required by Vundle
 filetype plugin indent on
@@ -78,8 +81,8 @@ set shiftwidth=4
 set expandtab
 
 " Show “invisible” characters
-" "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-" "set list
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set list
 
 "====================[ Appearance ]===================="
 " Set color scheme
@@ -104,7 +107,7 @@ let mapleader=","
 set laststatus=2
 
 " Show the cursor position
-set ruler
+"set ruler
 
 " Show commands as you type them
 set showcmd
@@ -151,3 +154,7 @@ set clipboard=unnamed,unnamedplus,autoselect
 " Shortcut to paste from system clipboard
 nnoremap <silent> <Leader>p "+p
 
+" Disable MacVim toolbar on startup
+if has("gui_running")
+    set guioptions-=T 
+endif
