@@ -4,6 +4,9 @@ git pull
 read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
+    for filename in .aliases .bash_profile .bash_prompt .bashrc .dir_colors .exports .functions .gitconfig .inputrc .vimrc
+        do
+            ln -s -f "$(dirname "$0")"/$filename ~
+        done
 fi
 source "$HOME/.bash_profile"
