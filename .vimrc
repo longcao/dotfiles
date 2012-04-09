@@ -22,6 +22,8 @@ Bundle 'ervandew/supertab'
 Bundle 'taglist.vim'
 Bundle 'phtml.vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'derekwyatt/vim-scala'
+" Bundle 'phpfolding.vim'
 
 " Required by Vundle
 filetype plugin indent on
@@ -38,6 +40,7 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 
 " Enhance command-line completion
 set wildmenu
+set wildmode=list:longest
 
 "====================[ Lines ]===================="
 " Don’t add empty newlines at the end of files
@@ -158,3 +161,4 @@ nnoremap <silent> <Leader>p "+p
 if has("gui_running")
     set guioptions-=T 
 endif
+
