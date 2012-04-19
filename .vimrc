@@ -19,11 +19,8 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'Syntastic'
 Bundle 'ervandew/supertab'
-Bundle 'taglist.vim'
-Bundle 'phtml.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'derekwyatt/vim-scala'
-" Bundle 'phpfolding.vim'
 
 " Required by Vundle
 filetype plugin indent on
