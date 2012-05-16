@@ -2,6 +2,11 @@
 set nocompatible
 
 "====================[ Vundle ]===================="
+" Clone vundle if not present
+if !isdirectory(expand("~/.vim/bundle/vundle/.git"))
+    !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+endif
+
 " Required by Vundle, will be turned on later
 filetype off
 
