@@ -22,10 +22,12 @@ Bundle 'AutoClose'
 Bundle 'hexHighlight.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'shawncplus/phpcomplete.vim'
-Bundle 'Syntastic'
+Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'pangloss/vim-javascript'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'gre/play2vim'
+Bundle 'othree/html5.vim'
 
 " Required by Vundle
 filetype plugin indent on
@@ -43,6 +45,12 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 " Enhance command-line completion
 set wildmenu
 set wildmode=list:longest
+
+"====================[ Syntastic ]===================="
+" Syntastic modes
+let g:syntastic_mode_map = { 'mode': 'active',
+                               \ 'active_filetypes': [],
+                               \ 'passive_filetypes': ['scala'] }
 
 "====================[ Lines ]===================="
 " Don’t add empty newlines at the end of files
