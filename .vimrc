@@ -28,6 +28,9 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'gre/play2vim'
 Bundle 'othree/html5.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-powerline'
 
 " Required by Vundle
 filetype plugin indent on
@@ -51,6 +54,10 @@ set wildmode=list:longest
 let g:syntastic_mode_map = { 'mode': 'active',
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['scala'] }
+
+"====================[ Ctrl-P ]===================="
+" Don't manage working path
+let g:ctrlp_working_path_mode = 0
 
 "====================[ Lines ]===================="
 " Don’t add empty newlines at the end of files
