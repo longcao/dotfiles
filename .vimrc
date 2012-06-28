@@ -179,3 +179,6 @@ if has("gui_running")
     set guioptions-=T 
 endif
 
+" set .swp file directory, make sure directory exists upon installation of dotfiles
+set directory=~/.vim/tmp
+
