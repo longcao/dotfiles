@@ -9,4 +9,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
             ln -s -f "$(dirname "$0")"/$filename ~
         done
 fi
+mkdir -p ~/.vim/tmp
 source "$HOME/.bash_profile"

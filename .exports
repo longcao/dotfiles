@@ -1,5 +1,5 @@
 # Homebrew /bin folder is before /usr/bin on $PATH
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/Applications/MAMP/bin/php/php5.3.6/bin:$PATH
 # Make vim the default editor
 export EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
