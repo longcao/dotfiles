@@ -99,6 +99,7 @@ set smartindent
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set shiftround
 
 " Show “invisible” characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
