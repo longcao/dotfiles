@@ -33,3 +33,8 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+[user]
+	name = Long Cao
+	email = long@gawker.com
+[credential]
+	helper = osxkeychain
