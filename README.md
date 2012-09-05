@@ -3,7 +3,8 @@
 ## Installation
 
 ```bash
-git clone https://github.com/longcao/dotfiles.git && cd dotfiles && ./bootstrap.sh
+git clone https://github.com/longcao/dotfiles.git .dotfiles 
+sh .dotfiles/bootstrap.sh
 ```
 
 ## Thanks to…
