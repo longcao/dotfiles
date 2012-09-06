@@ -99,3 +99,6 @@ alias phpi="/usr/bin/php -a"
 # grep color
 alias grep="grep --color='auto'"
 
+# sbt script
+alias sbt="sbt-typesafe-script"
+

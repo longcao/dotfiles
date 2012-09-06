@@ -96,9 +96,11 @@ set scrolloff=3
 "====================[ Whitespace ]===================="
 " Make tabs as wide as 4 spaces
 set smartindent
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set expandtab
+"set expandtab
+set noexpandtab
 set shiftround
 
 " Show “invisible” characters
