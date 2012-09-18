@@ -48,6 +48,7 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 " Enhance command-line completion
 set wildmenu
 set wildmode=list:longest
+set wildignore+=*target/*,*.class
 
 "====================[ Syntastic ]===================="
 " Syntastic modes
@@ -58,6 +59,8 @@ let g:syntastic_mode_map = { 'mode': 'active',
 "====================[ Ctrl-P ]===================="
 " Don't manage working path
 let g:ctrlp_working_path_mode = 0
+" Ignore dotfiles
+let g:ctrlp_dotfiles = 0
 
 "====================[ Lines ]===================="
 " Don’t add empty newlines at the end of files
@@ -116,7 +119,7 @@ set gfn=Monaco:h10
 
 "====================[ Ctags ]===================="
 " Enable ctags
-set tags+=~/.vim/tags/sf-tags.tag
+" set tags+=~/.vim/tags/sf-tags.tag
 
 " Remaps tags to allow for dropdown menu when matches > 1
 noremap <C-]> g<C-]>
