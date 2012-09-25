@@ -119,7 +119,7 @@ set gfn=Monaco:h10
 
 "====================[ Ctags ]===================="
 " Enable ctags
-" set tags+=~/.vim/tags/sf-tags.tag
+set tags+=~/.vim/tags/gawker-scala-tags.tag
 
 " Remaps tags to allow for dropdown menu when matches > 1
 noremap <C-]> g<C-]>

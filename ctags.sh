@@ -1,17 +1,14 @@
 #!/bin/bash
-if [[ -f ~/.vim/tags/sf-tags.tag ]] ; then
-    rm ~/.vim/tags/sf-tags.tag
+# Generates ctags using exuberant-ctags
+if [ ! -d ~/.vim/tags ]; then
+	mkdir ~/.vim/tags
 fi
-cd ~/sparefoot/genesis/src
-ctags -f ~/.vim/tags/sf-tags.tag \
-    -h ".php" -R \
-    --exclude="\.svn" \
-    --exclude="rad" \
+cd ~/gawkermedia/kinja/
+ctags -f ~/.vim/tags/gawker-scala-tags.tag \
+    -h [".scala"] -R \
+    --exclude="target" \
+    --exclude="public" \
+    --exclude="scratchpad" \
+    --exclude="resources" \
     --totals=yes \
-    --tag-relative=yes \
-    --PHP-kinds=+cf \
-    --regex-PHP='/abstract class ([^ ]*)/\1/c/' \
-    --regex-PHP='/interface ([^ ]*)/\1/c/' \
-    --regex-PHP='/(public |static |abstract |protected |private |final )+function\s+([^ ()]*)/\2/f/' \
-    --regex-PHP='/const ([^ ]*)/\1/c/'
-  
+	--tag-relative=yes
