@@ -31,6 +31,7 @@ Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-soy'
 
 " Required by Vundle
 filetype plugin indent on
