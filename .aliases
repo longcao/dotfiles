@@ -106,5 +106,5 @@ alias sbt="sbt-typesafe-script"
 alias regen="sh ~/gawkermedia/kinja/update-kinja-repos.sh"
 
 # use local coredev config
-alias play-local="play -Dconfig.file=~/gawkermedia/kinja/mantle/conf/application-coredev.conf"
+alias play-local="play -Dconfig.file=/Users/longcao/gawkermedia/kinja/mantle/conf/application-coredev.conf"
 
