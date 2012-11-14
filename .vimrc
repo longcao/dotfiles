@@ -21,7 +21,6 @@ Bundle 'gmarik/vundle'
 Bundle 'AutoClose'
 Bundle 'hexHighlight.vim'
 Bundle 'fholgado/minibufexpl.vim'
-Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'pangloss/vim-javascript'
@@ -39,8 +38,6 @@ filetype plugin indent on
 "====================[ Autocompletion ]===================="
 " Enable autocompletion
 set omnifunc=syntaxcomplete#Complete
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType phtml set omnifunc=phpcomplete#CompletePHP
 
 " Closes omni completion preview window when exiting insert mode or moving
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
