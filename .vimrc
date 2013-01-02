@@ -31,6 +31,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-soy'
+Bundle 'uarun/vim-protobuf'
 
 " Required by Vundle
 filetype plugin indent on
@@ -185,4 +186,7 @@ endif
 
 " set .swp file directory, make sure directory exists upon installation of dotfiles
 set directory=~/.vim/tmp
+
+" Open help pages in vertical buffers
+cnoremap help vert help
 

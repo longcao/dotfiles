@@ -108,3 +108,5 @@ alias regen="sh ~/gawkermedia/kinja/update-kinja-repos.sh"
 # use local coredev config
 alias play-local="play -Dconfig.file=/Users/longcao/gawkermedia/kinja/mantle/conf/application-coredev.conf"
 
+# ack ignores target/ dirs
+alias ack="ack --ignore-dir=target"
