@@ -10,5 +10,8 @@ ctags -f ~/.vim/tags/gawker-scala-tags.tag \
     --exclude="public" \
     --exclude="scratchpad" \
     --exclude="resources" \
+    --exclude="node_modules" \
+    --exclude="scripts" \
+    --exclude="utils" \
     --totals=yes \
 	--tag-relative=yes

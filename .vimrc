@@ -30,8 +30,9 @@ Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'vim-soy'
+Bundle 'sidnair/vim-soy'
 Bundle 'uarun/vim-protobuf'
+Bundle 'airblade/vim-gitgutter'
 
 " Required by Vundle
 filetype plugin indent on
@@ -60,6 +61,9 @@ let g:syntastic_mode_map = { 'mode': 'active',
 let g:ctrlp_working_path_mode = 0
 " Ignore dotfiles
 let g:ctrlp_dotfiles = 0
+let g:ctrlp_custom_ignore = {
+	\ 'dir': 'node_modules'
+	\ }
 
 "====================[ Lines ]===================="
 " Don’t add empty newlines at the end of files
@@ -116,6 +120,9 @@ colorscheme molokai
 " Default font for MacVim
 set gfn=Monaco:h10
 
+" Enable syntax highlighting
+syntax on
+
 "====================[ Ctags ]===================="
 " Enable ctags
 set tags+=~/.vim/tags/gawker-scala-tags.tag
@@ -151,6 +158,10 @@ function! StripWhitespace ()
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
+"====================[ Gitgutter ]===================="
+" make the gutter background clear - this needs to go after `syntax on`
+highlight clear SignColumn
+
 "====================[ Miscellaneous ]===================="
 " Don’t show the intro message when starting vim
 set shortmess=atI
@@ -169,9 +180,6 @@ set encoding=utf-8 nobomb
 
 " Disable error bells
 set noerrorbells
-
-" Enable syntax highlighting
-syntax on
 
 " Enable copying to Mac clipboard
 set clipboard=unnamed,unnamedplus,autoselect

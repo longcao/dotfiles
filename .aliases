@@ -110,3 +110,7 @@ alias play-local="play -Dconfig.file=/Users/longcao/gawkermedia/kinja/mantle/con
 
 # ack ignores target/ dirs
 alias ack="ack --ignore-dir=target"
+
+# edit hosts file
+alias hosts="sudo mvim /etc/hosts"
+
