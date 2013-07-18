@@ -118,7 +118,8 @@ set shiftround
 colorscheme molokai
 
 " Default font for MacVim
-set gfn=Monaco:h10
+" set gfn=Monaco:h10
+set gfn=Inconsolata:h14
 
 " Enable syntax highlighting
 syntax on
