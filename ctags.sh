@@ -13,5 +13,6 @@ ctags -f ~/.vim/tags/gawker-scala-tags.tag \
     --exclude="node_modules" \
     --exclude="scripts" \
     --exclude="utils" \
+    --exclude="javascripts" \
     --totals=yes \
 	--tag-relative=yes

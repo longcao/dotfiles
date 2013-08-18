@@ -114,3 +114,5 @@ alias ack="ack --ignore-dir=target"
 # edit hosts file
 alias hosts="sudo mvim /etc/hosts"
 
+# warn if overwriting file when using mv
+alias mv="mv -i"
