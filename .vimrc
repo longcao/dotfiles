@@ -160,8 +160,6 @@ endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
 "====================[ Gitgutter ]===================="
-" make the gutter background clear - this needs to go after `syntax on`
-highlight clear SignColumn
 
 "====================[ Miscellaneous ]===================="
 " Don’t show the intro message when starting vim
