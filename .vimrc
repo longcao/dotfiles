@@ -160,6 +160,16 @@ endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
 "====================[ Gitgutter ]===================="
+" Turn off realtime gitgutter updates
+let g:gitgutter_realtime = 0
+
+"====================[ MiniBufExplorer ]===================="
+hi link MBENormal                Comment
+hi link MBEChanged               String
+hi link MBEVisibleNormal         Special
+hi link MBEVisibleChanged        String
+hi link MBEVisibleActiveNormal   Boolean
+hi link MBEVisibleActiveChanged  Error
 
 "====================[ Miscellaneous ]===================="
 " Don’t show the intro message when starting vim
@@ -196,4 +206,7 @@ set directory=~/.vim/tmp
 
 " Open help pages in vertical buffers
 cnoremap help vert help
+
+" set time to write to swap file (in ms)
+set updatetime=100
 
