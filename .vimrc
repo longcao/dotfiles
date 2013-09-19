@@ -29,7 +29,7 @@ Bundle 'gre/play2vim'
 Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'itchyny/lightline.vim'
 Bundle 'sidnair/vim-soy'
 Bundle 'uarun/vim-protobuf'
 Bundle 'airblade/vim-gitgutter'
@@ -123,6 +123,9 @@ set gfn=Inconsolata:h14
 
 " Enable syntax highlighting
 syntax on
+
+" Line length column
+set colorcolumn=160
 
 "====================[ Ctags ]===================="
 " Enable ctags
