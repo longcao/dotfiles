@@ -125,7 +125,7 @@ set gfn=Inconsolata:h14
 syntax on
 
 " Line length column
-set colorcolumn=160
+set colorcolumn=120
 
 "====================[ Ctags ]===================="
 " Enable ctags
