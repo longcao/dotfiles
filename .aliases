@@ -99,9 +99,6 @@ alias phpi="/usr/bin/php -a"
 # grep color
 alias grep="grep --color='auto'"
 
-# sbt script
-alias sbt="sbt-typesafe-script"
-
 # git pull kinja repos and ctags script
 alias regen="sh ~/gawkermedia/kinja/update-kinja-repos.sh"
 
