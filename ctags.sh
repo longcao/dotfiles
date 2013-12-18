@@ -14,5 +14,6 @@ ctags -f ~/.vim/tags/gawker-scala-tags.tag \
     --exclude="scripts" \
     --exclude="utils" \
     --exclude="javascripts" \
+    --exclude="build" \
     --totals=yes \
 	--tag-relative=yes
