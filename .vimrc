@@ -33,6 +33,7 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'sidnair/vim-soy'
 Bundle 'uarun/vim-protobuf'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'bufkill.vim'
 
 " Required by Vundle
 filetype plugin indent on
