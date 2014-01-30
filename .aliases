@@ -113,3 +113,6 @@ alias hosts="sudo mvim /etc/hosts"
 
 # warn if overwriting file when using mv
 alias mv="mv -i"
+
+# megaclean (delete target/ folders) all sbt/play projects in a given directory
+alias megaclean="find . -name target | xargs rm -Rf"
