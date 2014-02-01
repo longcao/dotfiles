@@ -102,8 +102,11 @@ alias grep="grep --color='auto'"
 # git pull kinja repos and ctags script
 alias regen="sh ~/gawkermedia/kinja/update-kinja-repos.sh"
 
+# use local dbdev config
+alias play-dbdev="play -Dconfig.file=conf/application-dbdev.conf"
+#
 # use local coredev config
-alias play-local="play -Dconfig.file=/Users/longcao/gawkermedia/kinja/mantle/conf/application-coredev.conf"
+alias play-coredev="play -Dconfig.file=conf/application-coredev.conf"
 
 # ack ignores target/ dirs
 alias ack="ack --ignore-dir=target"
