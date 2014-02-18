@@ -99,9 +99,6 @@ alias phpi="/usr/bin/php -a"
 # grep color
 alias grep="grep --color='auto'"
 
-# git pull kinja repos and ctags script
-alias regen="sh ~/gawkermedia/kinja/update-kinja-repos.sh"
-
 # use local dbdev config
 alias play-dbdev="play -Dconfig.file=conf/application-dbdev.conf"
 #
