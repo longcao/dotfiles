@@ -1,8 +1,10 @@
 ack
 autoconf
 automake
+bash
 bash-completion
 bison
+bsdmake
 cloc
 cloog
 cmake
@@ -30,7 +32,9 @@ libtiff
 libtool
 libyaml
 mpfr
+mr
 mysql
+neo4j
 nmap
 node
 openssl
@@ -42,11 +46,13 @@ pstree
 python
 r
 readline
+redis
 ruby
 sbt
 scala
 siege
 sl
+spiped
 sqlite
 tree
 unrar
