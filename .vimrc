@@ -167,6 +167,9 @@ noremap <leader>ss :call StripWhitespace ()<CR>
 " Turn off realtime gitgutter updates
 let g:gitgutter_realtime = 0
 
+" Turn off eager gitgutter
+let g:gitgutter_eager = 0
+
 "====================[ MiniBufExplorer ]===================="
 hi link MBENormal                Comment
 hi link MBEChanged               String
