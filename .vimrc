@@ -128,6 +128,11 @@ syntax on
 " Line length column
 set colorcolumn=120
 
+"====================[ Splits ]===================="
+" Open new horizontal splits below and vertical splits right
+set splitbelow
+set splitright
+
 "====================[ Ctags ]===================="
 " Enable ctags
 set tags+=~/.vim/tags/gawker-scala-tags.tag
@@ -216,4 +221,3 @@ cnoremap help vert help
 
 " set time to write to swap file (in ms)
 set updatetime=100
-
