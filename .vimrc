@@ -176,6 +176,9 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 
 "====================[ MiniBufExplorer ]===================="
+" Put new window above
+let g:miniBufExplBRSplit = 0
+
 hi link MBENormal                Comment
 hi link MBEChanged               String
 hi link MBEVisibleNormal         Special
