@@ -101,11 +101,11 @@ set esckeys
 set scrolloff=3
 
 "====================[ Whitespace ]===================="
-" Make tabs as wide as 4 spaces
+" Make tabs as wide as 2 spaces
 set smartindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 "set expandtab
 set noexpandtab
 set shiftround
