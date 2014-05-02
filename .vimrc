@@ -106,9 +106,10 @@ set smartindent
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-"set expandtab
-set noexpandtab
+set expandtab
 set shiftround
+
+au BufRead,BufNewFile,BufEnter ~/gawkermedia/* setlocal noexpandtab
 
 " Show “invisible” characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
