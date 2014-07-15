@@ -13,6 +13,7 @@ coreutils
 cowsay
 ctags
 discount
+dnsmasq
 freetype
 gdbm
 gfortran
@@ -55,6 +56,7 @@ sl
 spiped
 sqlite
 tree
+typesafe-activator
 unrar
 vimpager
 wget
