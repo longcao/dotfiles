@@ -16,7 +16,6 @@ discount
 dnsmasq
 freetype
 gdbm
-gfortran
 git
 gmp
 graphviz
@@ -41,11 +40,9 @@ node
 openssl
 pcre
 pkg-config
-play
 protobuf
 pstree
 python
-r
 readline
 redis
 ruby
