@@ -113,3 +113,6 @@ alias mv="mv -i"
 
 # megaclean (delete target/ folders) all sbt/play projects in a given directory
 alias megaclean="find . -name target | xargs rm -Rf"
+
+# sbt alias because it's shorter to type than `activator`
+alias sbt="activator"
