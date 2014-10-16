@@ -36,7 +36,7 @@
 	insteadOf = "gist:"
 [user]
 	name = Long Cao
-	email = long@gawker.com
+	email = longcao@gmail.com
 [credential]
 	helper = osxkeychain
 [alias]
