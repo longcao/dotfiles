@@ -45,5 +45,6 @@
 	lg = !"git lg1"
 	prune-all = !git remote | xargs -n 1 git remote prune
 	pull = pull --rebase
+	workprofile = config user.email \"long.cao@pellucid.com\"
 [push]
 	default = simple
