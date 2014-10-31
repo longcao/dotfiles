@@ -34,6 +34,7 @@ Bundle 'duganchen/vim-soy'
 Bundle 'uarun/vim-protobuf'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bufkill.vim'
+Bundle "ekalinin/Dockerfile.vim"
 
 " Required by Vundle
 filetype plugin indent on
