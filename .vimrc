@@ -12,31 +12,32 @@ filetype off
 
 " Set runtime path with Vundle
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Vundle bundles
-Bundle 'AutoClose'
-Bundle 'hexHighlight.vim'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
-Bundle 'pangloss/vim-javascript'
-Bundle 'longcao/vim-scala'
-Bundle 'gre/play2vim'
-Bundle 'othree/html5.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'kien/ctrlp.vim'
-Bundle 'itchyny/lightline.vim'
-Bundle 'duganchen/vim-soy'
-Bundle 'uarun/vim-protobuf'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'bufkill.vim'
-Bundle "ekalinin/Dockerfile.vim"
+Plugin 'AutoClose'
+Plugin 'hexHighlight.vim'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'ervandew/supertab'
+Plugin 'pangloss/vim-javascript'
+Plugin 'longcao/vim-scala'
+Plugin 'gre/play2vim'
+Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/ctrlp.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'duganchen/vim-soy'
+Plugin 'uarun/vim-protobuf'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bufkill.vim'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " Required by Vundle
+call vundle#end()
 filetype plugin indent on
 
 "====================[ Autocompletion ]===================="
