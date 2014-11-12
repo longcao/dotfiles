@@ -111,8 +111,6 @@ set shiftwidth=2
 set expandtab
 set shiftround
 
-au BufRead,BufNewFile,BufEnter ~/gawkermedia/* setlocal noexpandtab
-
 " Show “invisible” characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 "set list
