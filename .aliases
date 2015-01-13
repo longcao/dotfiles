@@ -96,12 +96,6 @@ alias cpd="pwd | pbcopy"
 # grep color
 alias grep="grep --color='auto'"
 
-# use local dbdev config
-alias dbdev="activator -Dconfig.file=conf/application-dbdev.conf"
-#
-# use local coredev config
-alias coredev="activator -Dconfig.file=conf/application-coredev.conf"
-
 # ack ignores target/ dirs
 alias ack="ack --ignore-dir=target"
 
@@ -114,5 +108,3 @@ alias mv="mv -i"
 # megaclean (delete target/ folders) all sbt/play projects in a given directory
 alias megaclean="find . -name target | xargs rm -Rf"
 
-# sbt alias because it's shorter to type than `activator`
-alias sbt="activator"
