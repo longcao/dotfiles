@@ -18,7 +18,7 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " Vundle bundles
-Plugin 'AutoClose'
+Plugin 'Townk/vim-autoclose'
 Plugin 'hexHighlight.vim'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'scrooloose/syntastic'
