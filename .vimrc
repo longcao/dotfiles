@@ -144,6 +144,10 @@ set tags+=~/.vim/tags/pellucid-scala-tags.tag
 " Remaps tags to allow for dropdown menu when matches > 1
 noremap <C-]> g<C-]>
 
+"====================[ Supertab ]===================="
+" 'Enter' (<cr>) completes without inserting newline
+let g:SuperTabCrMapping = 1
+
 "====================[ Remaps ]===================="
 " Change mapleader
 let mapleader=","
