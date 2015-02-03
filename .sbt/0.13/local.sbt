@@ -1,0 +1,1 @@
+triggeredMessage := Watched.clearWhenTriggered
