@@ -10,5 +10,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
         done
 fi
 mkdir -p ~/.vim/tmp
-ln -s -f "$(dirname "$0")"/.sbt/0.13/local.sbt ~/.sbt/0.13/
+ln -s -f ~/"$(dirname "$0")"/.sbt/0.13/local.sbt ~/.sbt/0.13/local.sbt
 source "$HOME/.bash_profile"
