@@ -1,41 +1,33 @@
 " Enable vim
 set nocompatible
 
-"====================[ Vundle ]===================="
-" Clone vundle if not present
-if !isdirectory(expand("~/.vim/bundle/vundle/.git"))
-    !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+"====================[ vim-plug ]===================="
+" Clone vim-plug if not present
+if empty(glob("~/.vim/autoload/plug.vim"))
+    !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
-" Required by Vundle, will be turned on later
-filetype off
+call plug#begin('~/.vim/plugged')
 
-" Set runtime path with Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
+" plugins
+Plug 'Townk/vim-autoclose'
+Plug 'hexHighlight.vim'
+Plug 'fholgado/minibufexpl.vim'
+Plug 'scrooloose/syntastic'
+Plug 'ervandew/supertab'
+Plug 'pangloss/vim-javascript'
+Plug 'longcao/vim-scala'
+Plug 'gre/play2vim'
+Plug 'othree/html5.vim'
+Plug 'tpope/vim-surround'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'bufkill.vim'
+Plug 'ekalinin/Dockerfile.vim'
 
-" let Vundle manage Vundle 
-Plugin 'gmarik/vundle'
+call plug#end()
 
-" Vundle bundles
-Plugin 'Townk/vim-autoclose'
-Plugin 'hexHighlight.vim'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'ervandew/supertab'
-Plugin 'pangloss/vim-javascript'
-Plugin 'longcao/vim-scala'
-Plugin 'gre/play2vim'
-Plugin 'othree/html5.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'itchyny/lightline.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bufkill.vim'
-Plugin 'ekalinin/Dockerfile.vim'
-
-" Required by Vundle
-call vundle#end()
 filetype plugin indent on
 
 "====================[ Autocompletion ]===================="
