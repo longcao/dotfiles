@@ -28,7 +28,7 @@ Plug 'airblade/vim-gitgutter'
 " plugins for parens & brackets
 Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-surround'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'amdt/vim-niji'
 
 " other syntax highlighting
 Plug 'pangloss/vim-javascript'
