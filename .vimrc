@@ -25,6 +25,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'bufkill.vim'
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'tpope/vim-repeat'
+Plug 'guns/vim-clojure-static'
+Plug 'kien/rainbow_parentheses.vim'
 
 call plug#end()
 
