@@ -10,24 +10,37 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " plugins
-Plug 'Townk/vim-autoclose'
-Plug 'hexHighlight.vim'
-Plug 'fholgado/minibufexpl.vim'
-Plug 'scrooloose/syntastic'
-Plug 'ervandew/supertab'
-Plug 'pangloss/vim-javascript'
+" scala
 Plug 'longcao/vim-scala'
 Plug 'gre/play2vim'
-Plug 'othree/html5.vim'
-Plug 'tpope/vim-surround'
-Plug 'ctrlpvim/ctrlp.vim'
+
+" clojure
+Plug 'guns/vim-clojure-static'
+
+" buffers
+Plug 'fholgado/minibufexpl.vim'
+Plug 'bufkill.vim'
+
+" general ui stuff
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'bufkill.vim'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'tpope/vim-repeat'
-Plug 'guns/vim-clojure-static'
+
+" plugins for parens & brackets
+Plug 'Townk/vim-autoclose'
+Plug 'tpope/vim-surround'
 Plug 'kien/rainbow_parentheses.vim'
+
+" other syntax highlighting
+Plug 'pangloss/vim-javascript'
+Plug 'othree/html5.vim'
+Plug 'ekalinin/Dockerfile.vim'
+
+" misc
+Plug 'hexHighlight.vim'
+Plug 'scrooloose/syntastic'
+Plug 'ervandew/supertab'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-repeat'
 
 call plug#end()
 
