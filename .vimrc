@@ -140,6 +140,9 @@ syntax on
 " Line length column
 set colorcolumn=120
 
+" .md files are Markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 "====================[ Splits ]===================="
 " Open new horizontal splits below and vertical splits right
 set splitbelow
