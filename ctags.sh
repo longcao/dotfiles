@@ -3,8 +3,8 @@
 if [ ! -d ~/.vim/tags ]; then
 	mkdir ~/.vim/tags
 fi
-cd ~/pellucid/
-ctags -f ~/.vim/tags/pellucid-scala-tags.tag \
+cd ~/projects/
+ctags -f ~/.vim/tags/scala-tags.tag \
     -h [".scala"] -R \
     --exclude="target" \
     --exclude="public" \
