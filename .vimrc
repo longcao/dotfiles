@@ -150,7 +150,7 @@ set splitright
 
 "====================[ Ctags ]===================="
 " Enable ctags
-"set tags+=~/.vim/tags/scala-tags.tag
+set tags+=~/.vim/tags/scala-tags.tag
 
 " Remaps tags to allow for dropdown menu when matches > 1
 noremap <C-]> g<C-]>
