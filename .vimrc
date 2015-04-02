@@ -34,6 +34,7 @@ Plug 'amdt/vim-niji'
 Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'GEverding/vim-hocon'
 
 " misc
 Plug 'hexHighlight.vim'
