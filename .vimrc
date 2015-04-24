@@ -142,7 +142,10 @@ syntax on
 set colorcolumn=120
 
 " .md files are Markdown
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
+" Vagrantfiles are ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 
 "====================[ Splits ]===================="
 " Open new horizontal splits below and vertical splits right
