@@ -1,6 +1,15 @@
 " Enable vim
 set nocompatible
 
+"====================[ autocmds ]===================="
+" This section is up here so plugins can override autocmds and take priority.
+
+" .md files are Markdown
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+"
+" Vagrantfiles are ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+
 "====================[ vim-plug ]===================="
 " Clone vim-plug if not present
 if empty(glob("~/.vim/autoload/plug.vim"))
@@ -141,12 +150,6 @@ syntax on
 
 " Line length column
 set colorcolumn=120
-
-" .md files are Markdown
-autocmd BufNewFile,BufRead *.md set filetype=markdown
-
-" Vagrantfiles are ruby
-autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 
 "====================[ Splits ]===================="
 " Open new horizontal splits below and vertical splits right
