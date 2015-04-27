@@ -45,6 +45,7 @@ Plug 'othree/html5.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'GEverding/vim-hocon'
 Plug 'tpope/vim-liquid'
+Plug 'chase/vim-ansible-yaml'
 
 " misc
 Plug 'hexHighlight.vim'
