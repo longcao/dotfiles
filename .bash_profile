@@ -26,3 +26,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+if [ $(command -v boot2docker) -a `boot2docker status` == "running" ]; then
+  $(boot2docker shellinit 2> /dev/null)
+fi
+
