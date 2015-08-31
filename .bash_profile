@@ -25,8 +25,3 @@ complete -W "NSGlobalDomain" defaults
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
   . $(brew --prefix)/share/bash-completion/bash_completion
 fi
-
-if [ $(command -v boot2docker) -a `boot2docker status` == "running" ]; then
-  $(boot2docker shellinit 2> /dev/null)
-fi
-
