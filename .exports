@@ -24,7 +24,7 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
 # Java options
-export JAVA_OPTS="-XX:ReservedCodeCacheSize=256m -XX:MaxPermSize=256M"
+export JAVA_OPTS="-XX:ReservedCodeCacheSize=256m -XX:MaxMetaspaceSize=256m"
 
 # sbt options since it doesn't pick up JAVA_OPTS
 export SBT_OPTS="-XX:ReservedCodeCacheSize=256m -Xmx1024m"
