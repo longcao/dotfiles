@@ -18,7 +18,7 @@
 \set PROMPT2 ''
 
 -- separate history file per database
-\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTFILE ~/.psql_history/:HOST - :DBNAME
 
 -- only store command once in history if run more than once
 \set HISTCONTROL ignoredups
