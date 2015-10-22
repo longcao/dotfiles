@@ -1,11 +1,32 @@
-\set QUIET 1
+-- quiet settings for the rest of this file
+-- \set QUIET 1
+
+-- time queries
 \timing
+
+-- interactive error handling in transactions
 \set ON_ERROR_ROLLBACK interactive
+
+-- verbose error reports
 \set VERBOSITY verbose
+
+-- switch to expanded table format for nice reading automatically
 \x auto
+
+-- prompt styling
 \set PROMPT1 '%[%033[1m%]%M/%/%R%[%033[0m%]%# '
 \set PROMPT2 ''
+
+-- separate history file per database
 \set HISTFILE ~/.psql_history- :DBNAME
+
+-- only store command once in history if run more than once
 \set HISTCONTROL ignoredups
+
+-- force autocomplete for keywords to uppercase
+\set COMP_KEYWORD_CASE upper
+
+-- print nulls as an actual thing instead of empty space
 \pset null [null]
-\unset QUIET
+
+-- \unset QUIET
