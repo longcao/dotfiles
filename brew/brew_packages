@@ -1,4 +1,5 @@
 ack
+awscli
 bash
 bash-completion2
 cloc
@@ -7,7 +8,6 @@ coreutils
 cowsay
 cscope
 ctags
-docker
 git
 gmp
 htop-osx
@@ -19,10 +19,13 @@ mr
 node
 openssl
 pandoc
+postgis
+postgresql
 pstree
 readline
 sbt
 scala
 siege
+tmux
 tree
 unrar
