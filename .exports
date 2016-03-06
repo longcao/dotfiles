@@ -28,3 +28,7 @@ export JAVA_OPTS="-XX:ReservedCodeCacheSize=256m -XX:MaxMetaspaceSize=512m"
 
 # sbt options since it doesn't pick up JAVA_OPTS
 export SBT_OPTS="-XX:ReservedCodeCacheSize=256m -Xmx4096m"
+
+# nvm
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
