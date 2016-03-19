@@ -25,6 +25,7 @@ Plug 'gre/play2vim'
 
 " clojure
 Plug 'guns/vim-clojure-static'
+Plug 'tpope/vim-fireplace'
 
 " buffers
 Plug 'fholgado/minibufexpl.vim'
