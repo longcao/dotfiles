@@ -1,9 +1,15 @@
 # ruby gems
 export PATH=/usr/local/opt/ruby/bin:$PATH
+
 # Homebrew /bin folder is before /usr/bin on $PATH
 export PATH=/usr/local/bin:$PATH
+
+# add Postgres.app binaries
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
 # Make vim the default editor
 export EDITOR="vim"
+
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
@@ -11,6 +17,7 @@ export MANPAGER="less -X"
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
+
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
