@@ -12,14 +12,13 @@ git
 gmp
 htop-osx
 jsonpp
+jq
 leiningen
 macvim
 mr
 node
 openssl
 pandoc
-postgis
-postgresql
 pstree
 readline
 sbt
