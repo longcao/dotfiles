@@ -14,7 +14,7 @@
 \x auto
 
 -- prompt styling
-\set PROMPT1 '%[%033[1m%]%M/%/%R%[%033[0m%]%# '
+\set PROMPT1 '%n @ %m:%/%R%# '
 \set PROMPT2 ''
 
 -- separate history file per database
