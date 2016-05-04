@@ -29,7 +29,6 @@ Plug 'tpope/vim-fireplace'
 
 " buffers
 Plug 'fholgado/minibufexpl.vim'
-Plug 'bufkill.vim'
 
 " general ui stuff
 Plug 'itchyny/lightline.vim'
