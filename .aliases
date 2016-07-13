@@ -100,4 +100,4 @@ alias mv="mv -i"
 alias megaclean="find . -name target | xargs rm -Rf"
 
 # tree ignores target
-alias tree="tree -I target"
+alias tree="tree -I 'target|target-*'"
