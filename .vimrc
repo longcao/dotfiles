@@ -69,7 +69,7 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 " Enhance command-line completion
 set wildmenu
 set wildmode=list:longest
-set wildignore+=*target/*,*.class
+set wildignore+=*target/*,*target-*/*,*.class
 
 "====================[ Syntastic ]===================="
 " Syntastic modes
