@@ -48,3 +48,5 @@
 	workprofile = config user.email \"long@reonomy.com\"
 [push]
 	default = simple
+[diff]
+	compactionHeuristic = true
