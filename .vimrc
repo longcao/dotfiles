@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
 
 " plugins
 " scala
-Plug 'longcao/vim-scala'
+Plug 'derekwyatt/vim-scala'
 Plug 'gre/play2vim'
 
 " clojure
