@@ -46,6 +46,7 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'GEverding/vim-hocon'
 Plug 'tpope/vim-liquid'
 Plug 'chase/vim-ansible-yaml'
+Plug 'jparise/vim-graphql'
 
 " misc
 Plug 'hexHighlight.vim'
