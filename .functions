@@ -4,16 +4,16 @@ function md() {
 }
 # ImageMagick mass resize to edits/:filename
 function massresize() {
-	for i in *.jpg; 
-	do echo "$i"; 
-	convert "$i" -resize 640x "edits/$i";
-	done;
+  for i in *.jpg;
+  do echo "$i";
+  convert "$i" -resize 640x "edits/$i";
+  done;
 }
 
 # calls `mr` for parallel repo management and ctags script
 function regen() {
-	mr --directory ~/ --jobs 4 update
-	printf "\n~~~ regenerating ctags ~~~\n"
-	sh ~/.dotfiles/ctags.sh
-	printf "\n"
+  mr --directory ~/ --jobs 4 update
+  printf "\n~~~ regenerating ctags ~~~\n"
+  sh ~/.dotfiles/ctags.sh
+  printf "\n"
 }

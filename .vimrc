@@ -203,14 +203,14 @@ set showmode
 
 "====================[ Functions ]===================="
 " Strip trailing whitespace (,ss)
-function! StripWhitespace ()
+function! StripWhitespace()
   let save_cursor = getpos(".")
   let old_query = getreg('/')
   :%s/\s\+$//e
   call setpos('.', save_cursor)
   call setreg('/', old_query)
 endfunction
-noremap <leader>ss :call StripWhitespace ()<CR>
+noremap <Leader>ss :call StripWhitespace()<CR>
 
 "====================[ Gitgutter ]===================="
 " Turn off realtime gitgutter updates
@@ -257,7 +257,7 @@ nnoremap <silent> <Leader>p "+p
 
 " Disable MacVim toolbar on startup
 if has("gui_running")
-    set guioptions-=T 
+  set guioptions-=T
 endif
 
 " set .swp file directory, make sure directory exists upon installation of dotfiles
