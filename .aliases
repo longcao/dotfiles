@@ -37,3 +37,6 @@ alias megaclean="find . -name target | xargs rm -Rf"
 
 # tree ignores target
 alias tree="tree -I 'target|target-*'"
+
+# ag defaults to case-sensitive
+alias ag="ag -s"
