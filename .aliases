@@ -26,9 +26,6 @@ alias cpd="pwd | pbcopy"
 # grep color
 alias grep="grep --color='auto'"
 
-# ack ignores target/ dirs
-alias ack="ack --ignore-dir=target"
-
 # edit hosts file
 alias hosts="sudo mvim /etc/hosts"
 

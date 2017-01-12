@@ -59,6 +59,10 @@ call plug#end()
 
 filetype plugin indent on
 
+"====================[ Remaps ]===================="
+" Change mapleader
+let mapleader=","
+
 "====================[ Autocompletion ]===================="
 " Enable autocompletion
 set omnifunc=syntaxcomplete#Complete
@@ -81,11 +85,26 @@ let g:syntastic_mode_map = { 'mode': 'active',
 "====================[ Ctrl-P ]===================="
 " Don't manage working path
 let g:ctrlp_working_path_mode = 0
+
 " Ignore dotfiles
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_custom_ignore = {
-	\ 'dir': 'node_modules'
-	\ }
+  \ 'dir': 'node_modules'
+  \ }
+
+" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+" ag is fast enough that CtrlP doesn't need to cache
+let g:ctrlp_use_caching = 0
+
+"====================[ Search ]===================="
+
+" Use ag over grep
+set grepprg=ag\ --nogroup\ --nocolor
+
+" Search word under cursor with grepprg (ag) in working dir
+nnoremap <Leader>* :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 "====================[ Lines ]===================="
 " Don’t add empty newlines at the end of files
@@ -168,10 +187,6 @@ noremap <C-]> g<C-]>
 "====================[ Supertab ]===================="
 " 'Enter' (<cr>) completes without inserting newline
 let g:SuperTabCrMapping = 1
-
-"====================[ Remaps ]===================="
-" Change mapleader
-let mapleader=","
 
 "====================[ Status Line ]===================="
 " Always show status line
