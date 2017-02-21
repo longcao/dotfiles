@@ -3,6 +3,9 @@ set nocompatible
 
 "====================[ autocmds ]===================="
 " This section is up here so plugins can override autocmds and take priority.
+"
+" .sc files are Ammonite scripts (Scala)
+autocmd BufNewFile,BufRead *.sc set filetype=scala
 
 " .md files are Markdown
 autocmd BufNewFile,BufRead *.md set filetype=markdown
