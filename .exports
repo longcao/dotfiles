@@ -4,9 +4,6 @@ export PATH=/usr/local/opt/ruby/bin:$PATH
 # Homebrew /bin folder is before /usr/bin on $PATH
 export PATH=/usr/local/bin:$PATH
 
-# add Postgres.app binaries
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-
 # Make vim the default editor
 export EDITOR="vim"
 
