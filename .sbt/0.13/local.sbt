@@ -10,6 +10,9 @@ watchSources ++= (
   ++ (baseDirectory.value / "project" * "*.sbt").get
 )
 
+addCommandAlias("tc", "test:compile")
+addCommandAlias("amm", "test:console")
+
 addCommandAlias("rtu", "; reload ; test:update")
 addCommandAlias("rtc", "; reload ; test:compile")
 addCommandAlias("ru", "; reload ; update")
