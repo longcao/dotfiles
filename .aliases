@@ -40,3 +40,7 @@ alias tree="tree -I 'target|target-*'"
 
 # ag defaults to case-sensitive
 alias ag="ag -s"
+
+# paste from clipboard and pretty print JSON
+alias pj="pbpaste | jq ."
+alias pastejson="pj"
