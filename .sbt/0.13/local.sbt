@@ -12,6 +12,7 @@ watchSources ++= (
 
 addCommandAlias("tc", "test:compile")
 addCommandAlias("amm", "test:console")
+addCommandAlias("itc", "it:compile")
 
 addCommandAlias("rtu", "; reload ; test:update")
 addCommandAlias("rtc", "; reload ; test:compile")
