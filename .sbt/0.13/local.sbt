@@ -1,6 +1,6 @@
 triggeredMessage := Watched.clearWhenTriggered
 
-libraryDependencies += "com.lihaoyi" % "ammonite" % "0.9.4" % "test" cross CrossVersion.full
+libraryDependencies += "com.lihaoyi" % "ammonite" % "latest.release" % "test" cross CrossVersion.full
 
 initialCommands in (Test, console) := """ammonite.Main().run()"""
 
