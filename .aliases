@@ -44,3 +44,6 @@ alias ag="ag -s"
 # paste from clipboard and pretty print JSON
 alias pj="pbpaste | jq ."
 alias pastejson="pj"
+
+# use gdate
+alias date='gdate'
