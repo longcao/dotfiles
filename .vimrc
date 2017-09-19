@@ -26,10 +26,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'derekwyatt/vim-scala'
 Plug 'gre/play2vim'
 
-" clojure
-Plug 'guns/vim-clojure-static'
-Plug 'tpope/vim-fireplace'
-
 " buffers
 Plug 'fholgado/minibufexpl.vim'
 
@@ -40,7 +36,6 @@ Plug 'airblade/vim-gitgutter'
 " plugins for parens & brackets
 Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-surround'
-Plug 'raymond-w-ko/vim-niji'
 
 " other syntax highlighting
 Plug 'pangloss/vim-javascript'
