@@ -47,7 +47,6 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'jparise/vim-graphql'
 
 " misc
-Plug 'hexHighlight.vim'
 Plug 'scrooloose/syntastic'
 Plug 'ervandew/supertab'
 Plug 'ctrlpvim/ctrlp.vim'
