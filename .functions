@@ -2,13 +2,6 @@
 function md() {
   mkdir -p "$@" && cd "$@"
 }
-# ImageMagick mass resize to edits/:filename
-function massresize() {
-  for i in *.jpg;
-  do echo "$i";
-  convert "$i" -resize 640x "edits/$i";
-  done;
-}
 
 # calls `mr` for parallel repo management and ctags script
 function regen() {
