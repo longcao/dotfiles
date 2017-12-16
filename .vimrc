@@ -26,6 +26,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'derekwyatt/vim-scala'
 Plug 'gre/play2vim'
 
+" rust
+Plug 'rust-lang/rust.vim'
+
 " buffers
 Plug 'fholgado/minibufexpl.vim'
 
