@@ -147,12 +147,11 @@ set scrolloff=3
 
 "====================[ Whitespace ]===================="
 " Make tabs as wide as 2 spaces
-set smartindent
+set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set shiftround
-set expandtab
 
 " Show “invisible” characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
