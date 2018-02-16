@@ -82,6 +82,9 @@ let g:syntastic_mode_map = { 'mode': 'active',
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['scala'] }
 
+" turn off standard python checker and just use flake8
+let g:syntastic_python_checkers=['flake8']
+
 "====================[ Ctrl-P ]===================="
 " Don't manage working path
 let g:ctrlp_working_path_mode = 0
