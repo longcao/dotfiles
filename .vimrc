@@ -34,7 +34,7 @@ Plug 'fholgado/minibufexpl.vim'
 
 " general ui stuff
 Plug 'itchyny/lightline.vim'
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter', { 'commit': '932ffaca092cca246b82c33e23d2d3a05e192e08' }
 
 " plugins for parens & brackets
 Plug 'Townk/vim-autoclose'
