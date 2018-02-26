@@ -96,16 +96,16 @@ let g:ctrlp_custom_ignore = {
   \ 'dir': 'node_modules'
   \ }
 
-" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" Use ripgrep in CtrlP for listing files. Lightning fast and respects .gitignore
+let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
 
-" ag is fast enough that CtrlP doesn't need to cache
+" ripgrep is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
 
 "====================[ Search ]===================="
 
-" Use ag over grep
-set grepprg=ag\ --nogroup\ --nocolor
+" Use ripgrep over grep
+set grepprg=rg\ --color=never
 
 " Search word under cursor with grepprg (ag) in working dir
 nnoremap <Leader>* :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
