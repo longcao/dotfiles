@@ -96,10 +96,10 @@ let g:ctrlp_custom_ignore = {
   \ 'dir': 'node_modules'
   \ }
 
-" Use ripgrep in CtrlP for listing files. Lightning fast and respects .gitignore
-let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+" Use fd in CtrlP for listing files.
+let g:ctrlp_user_command = 'fd -c never "" %s'
 
-" ripgrep is fast enough that CtrlP doesn't need to cache
+" fd is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
 
 "====================[ Search ]===================="
