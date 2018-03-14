@@ -97,7 +97,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Use fd in CtrlP for listing files.
-let g:ctrlp_user_command = 'fd -c never "" %s'
+let g:ctrlp_user_command = 'fd --type file -c never "" %s'
 
 " fd is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
