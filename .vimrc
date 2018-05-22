@@ -47,7 +47,6 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'GEverding/vim-hocon'
 Plug 'tpope/vim-liquid'
 Plug 'chase/vim-ansible-yaml'
-Plug 'jparise/vim-graphql'
 
 " misc
 Plug 'scrooloose/syntastic'
@@ -111,10 +110,6 @@ set grepprg=rg\ --color=never
 nnoremap <Leader>* :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 "====================[ Lines ]===================="
-" Don’t add empty newlines at the end of files
-set binary
-set noeol
-
 " Enable line numbers
 set number
 
@@ -158,8 +153,8 @@ set shiftwidth=2
 set shiftround
 
 " Show “invisible” characters
-"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-"set list
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
 
 "====================[ Appearance ]===================="
 " Set color scheme
