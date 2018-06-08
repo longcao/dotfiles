@@ -14,10 +14,8 @@ mkdir -p ~/.vim/tmp
 mkdir -p ~/.vim/colors
 mkdir -p ~/.psql_history
 mkdir -p ~/.sbt/0.13
-mkdir -p ~/.lein
 
 ln -s -f ~/"$(dirname "$0")"/.sbt/0.13/local.sbt ~/.sbt/0.13/local.sbt
-ln -s -f ~/"$(dirname "$0")"/.lein/profiles.clj ~/.lein/profiles.clj
 ln -s -f ~/"$(dirname "$0")"/.vim/colors/molokai.vim ~/.vim/colors/molokai.vim
 
 brew tap homebrew/bundle
