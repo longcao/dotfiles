@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
-tap "homebrew/versions"
 brew "ammonite-repl"
 brew "gdbm"
 brew "ansible"
