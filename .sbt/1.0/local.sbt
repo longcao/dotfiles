@@ -8,5 +8,3 @@ watchSources ++= (
 
 addCommandAlias("tc", "test:compile")
 addCommandAlias("itc", "it:compile")
-
-addSbtPlugin("com.scalapenos" % "sbt-prompt" % "1.0.2")
