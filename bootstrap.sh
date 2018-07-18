@@ -16,6 +16,7 @@ mkdir -p ~/.psql_history
 mkdir -p ~/.sbt/0.13
 
 ln -s -f ~/"$(dirname "$0")"/.sbt/0.13/local.sbt ~/.sbt/0.13/local.sbt
+ln -s -f ~/"$(dirname "$0")"/.sbt/1.0/local.sbt ~/.sbt/1.0/local.sbt
 ln -s -f ~/"$(dirname "$0")"/.vim/colors/molokai.vim ~/.vim/colors/molokai.vim
 
 brew tap homebrew/bundle
