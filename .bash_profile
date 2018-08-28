@@ -5,6 +5,8 @@ for file in ~/.{bash_prompt,exports,aliases,functions,extra}; do
 done
 unset file
 
+eval "$(pyenv init -)"
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 

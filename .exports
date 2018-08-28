@@ -37,3 +37,5 @@ export JAVA_OPTS="-XX:ReservedCodeCacheSize=256m -XX:MaxMetaspaceSize=512m"
 # sbt options since it doesn't pick up JAVA_OPTS
 export SBT_OPTS="-XX:ReservedCodeCacheSize=256m -Xmx4096m"
 
+# Choose specific Python version for pyenv
+export PYENV_VERSION=3.6.6
