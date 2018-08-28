@@ -14,6 +14,7 @@ mkdir -p ~/.vim/tmp
 mkdir -p ~/.vim/colors
 mkdir -p ~/.psql_history
 mkdir -p ~/.sbt/0.13
+mkdir -p ~/.sbt/1.0
 
 ln -s -f ~/"$(dirname "$0")"/.sbt/0.13/local.sbt ~/.sbt/0.13/local.sbt
 ln -s -f ~/"$(dirname "$0")"/.sbt/1.0/local.sbt ~/.sbt/1.0/local.sbt
