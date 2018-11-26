@@ -1,19 +1,19 @@
 ############### ENVIRONMENT VARIABLES ###############
 # Set PATH
-set -x PATH ~/.cargo/bin $PATH
-set -x PATH ~/.okta/bin $PATH
+set -gx PATH ~/.cargo/bin $PATH
+set -gx PATH ~/.okta/bin $PATH
 
 # Make vim the default editor
-set -x EDITOR vim
+set -gx EDITOR vim
 
 # Java options
-set -x JAVA_OPTS "-XX:ReservedCodeCacheSize=256m -XX:MaxMetaspaceSize=512m"
+set -gx JAVA_OPTS "-XX:ReservedCodeCacheSize=256m -XX:MaxMetaspaceSize=512m"
 
 # sbt options since it doesn't pick up JAVA_OPTS
-set -x SBT_OPTS "-XX:ReservedCodeCacheSize=256m -Xmx4096m"
+set -gx SBT_OPTS "-XX:ReservedCodeCacheSize=256m -Xmx4096m"
 
 # Choose specific Python version for pyenv
-set -x PYENV_VERSION "3.6.6"
+set -gx PYENV_VERSION "3.6.6"
 
 ############### ABBREVIATIONS ###############
 # Easier navigation
