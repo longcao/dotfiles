@@ -46,6 +46,21 @@ alias pastejson="pj"
 # use gdate
 alias date='gdate'
 
+############### FUNCTIONS ###############
+
+# mkdir and immediately cd to it
+function md
+  mkdir -p $argv; and cd $argv
+end
+
+# Update registered git repos
+function regen
+  mr --directory ~/ --jobs 4 update
+  printf "\n~~~ regenerating ctags ~~~\n"
+  sh ~/.dotfiles/ctags.sh
+  printf "\n"
+end
+
 ############### OTHER INIT ###############
 # Load pyenv automatically
 status --is-interactive; and source (pyenv init -|psub)
