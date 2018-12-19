@@ -3,5 +3,7 @@
     "workbench.colorTheme": "Monokai",
     "workbench.statusBar.feedback.visible": false,
     "editor.fontFamily": "Inconsolata",
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true
 }
