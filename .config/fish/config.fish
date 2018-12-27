@@ -16,6 +16,8 @@ set -gx SBT_OPTS "-XX:ReservedCodeCacheSize=256m -Xmx4096m"
 # Choose specific Python version for pyenv
 set -gx PYENV_VERSION "3.6.6"
 
+# Set LS_COLORS
+eval (gdircolors -c ~/.dir_colors)
 ############### ABBREVIATIONS ###############
 # Easier navigation
 abbr -a -- - 'cd -'
