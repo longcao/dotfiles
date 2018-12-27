@@ -1,6 +1,6 @@
 {
     "editor.tabSize": 2,
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Dark (Molokai)",
     "workbench.statusBar.feedback.visible": false,
     "editor.fontFamily": "Inconsolata",
     "editor.fontSize": 14,
