@@ -11,7 +11,20 @@ function fish_prompt --description 'Write out the prompt'
         set -g __fish_color_blue (set_color -o blue)
     end
 
-    #Set the color for the status depending on the value
+    function parse_git_dirty
+        set -l git_status (git status 2> /dev/null | tail -n1 | cut -c 1-17)
+        if test \( -n "$git_status" \) -a \( "$git_status" != "nothing to commit" \)
+            echo "*"
+        else
+            echo ""
+        end
+    end
+
+    function parse_git_branch
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1"(parse_git_dirty)"/"
+    end
+
+    # Set the color for the status depending on the value
     set __fish_color_status (set_color -o green)
     if test $stat -gt 0
         set __fish_color_status (set_color -o red)
@@ -34,6 +47,6 @@ function fish_prompt --description 'Write out the prompt'
                 set -g __fish_prompt_cwd (set_color $fish_color_cwd)
             end
 
-            printf '[%s] %s%s@%s %s%s %s[%s]%s \f\r> ' (date "+%H:%M:%S") "$__fish_color_blue" $USER (prompt_hostname) "$__fish_prompt_cwd" (prompt_pwd) "$__fish_color_status" "$stat" "$__fish_prompt_normal"
+            printf '[%s] %s%s@%s %s%s %s[%s] %s%s \f\r> ' (date "+%H:%M:%S") "$__fish_color_blue" $USER (prompt_hostname) "$__fish_prompt_cwd" (prompt_pwd) "$__fish_color_status" "$stat" "$__fish_prompt_normal" (parse_git_branch)
     end
 end
