@@ -19,6 +19,9 @@ set -gx PYENV_VERSION "3.6.6"
 # Don't shorten prompt_pwd directory names at all
 set -g fish_prompt_pwd_dir_length 0
 
+# Set fish_color_cwd to yellow
+set fish_color_cwd yellow
+
 # Set LS_COLORS
 eval (gdircolors -c ~/.dir_colors)
 ############### ABBREVIATIONS ###############
