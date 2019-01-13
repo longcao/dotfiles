@@ -15,5 +15,6 @@
     "vim.leader": ",",
     "editor.minimap.enabled": false,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "editor.renderWhitespace": "boundary"
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true
 }
