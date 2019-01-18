@@ -4,7 +4,8 @@
     "workbench.statusBar.feedback.visible": false,
     "workbench.colorCustomizations": {
         "[Dark (Molokai)]": {
-            "statusBar.background": "#5c5c5c"
+            "statusBar.background": "#5c5c5c",
+            "statusBar.noFolderBackground": "#5c5c5c"
         }
     },
     "editor.fontFamily": "Inconsolata",
