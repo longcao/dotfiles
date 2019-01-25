@@ -18,5 +18,6 @@
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "editor.renderWhitespace": "boundary",
     "files.trimTrailingWhitespace": true,
+    "window.restoreWindows": "none",
     "workbench.startupEditor": "none"
 }
