@@ -17,5 +17,6 @@
     "editor.minimap.enabled": false,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "editor.renderWhitespace": "boundary",
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "workbench.startupEditor": "none"
 }
