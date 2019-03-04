@@ -1,7 +1,6 @@
 ############### ENVIRONMENT VARIABLES ###############
 # Set PATH
 set -gx PATH ~/.cargo/bin $PATH
-set -gx PATH ~/.okta/bin $PATH
 set -gx PATH "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/" $PATH
 
 # Make vim the default editor
