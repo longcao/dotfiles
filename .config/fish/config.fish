@@ -71,5 +71,5 @@ function regen
 end
 
 ############### OTHER INIT ###############
-# Load pyenv automatically
-status --is-interactive; and source (pyenv init -|psub)
+# Load pyenv/rbenv automatically
+status --is-interactive; and source (pyenv init -|psub); and source (rbenv init -|psub)
