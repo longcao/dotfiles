@@ -22,5 +22,6 @@
     "workbench.startupEditor": "none",
     "files.exclude": {
         "**/bazel-*": true
-    }
+    },
+    "window.newWindowDimensions": "maximized"
 }
