@@ -19,5 +19,8 @@
     "editor.renderWhitespace": "boundary",
     "files.trimTrailingWhitespace": true,
     "window.restoreWindows": "none",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "files.exclude": {
+        "**/bazel-*": true
+    }
 }
