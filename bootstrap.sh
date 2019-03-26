@@ -19,6 +19,7 @@ mkdir -p ~/.sbt/1.0
 
 ln -s -f ~/"$(dirname "$0")"/.config/fish/config.fish ~/.config/fish/config.fish
 ln -s -F ~/.dotfiles/.config/fish/functions/ ~/.config/fish/
+ln -s -f ~/.dotfiles/vscode/keybindings.json "$HOME/Library/Application Support/Code/User/keybindings.json"
 ln -s -f ~/.dotfiles/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 ln -s -f ~/"$(dirname "$0")"/.sbt/0.13/local.sbt ~/.sbt/0.13/local.sbt
 ln -s -f ~/"$(dirname "$0")"/.sbt/1.0/local.sbt ~/.sbt/1.0/local.sbt
