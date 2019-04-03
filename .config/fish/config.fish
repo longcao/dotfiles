@@ -64,9 +64,6 @@ end
 # Update registered git repos
 function regen
   mr --directory ~/ --jobs 4 update
-  printf "\n~~~ regenerating ctags ~~~\n"
-  sh ~/.dotfiles/ctags.sh
-  printf "\n"
 end
 
 ############### OTHER INIT ###############
