@@ -52,3 +52,5 @@
 	compactionHeuristic = true
 [fetch]
 	prune = true
+[protocol]
+	version = 2
