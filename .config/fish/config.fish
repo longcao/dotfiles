@@ -1,7 +1,8 @@
 ############### ENVIRONMENT VARIABLES ###############
-# Set PATH
-set -gx PATH ~/.cargo/bin $PATH
-set -gx PATH "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/" $PATH
+# Set fish_user_paths (which gets automatically prepended to PATH)
+set -gx fish_user_paths ~/.cargo/bin $fish_user_paths
+set -gx fish_user_paths "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/" $fish_user_paths
+set -gx fish_user_paths ~/go/bin $fish_user_paths
 
 # Make vim the default editor
 set -gx EDITOR vim
