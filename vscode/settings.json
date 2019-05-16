@@ -23,5 +23,8 @@
     "files.exclude": {
         "**/bazel-*": true
     },
+    "files.watcherExclude": {
+        "**/bazel-*": true
+    },
     "window.newWindowDimensions": "maximized"
 }
