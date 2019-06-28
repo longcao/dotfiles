@@ -26,5 +26,7 @@
     "files.watcherExclude": {
         "**/bazel-*": true
     },
-    "window.newWindowDimensions": "maximized"
+    "window.newWindowDimensions": "maximized",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true
 }
