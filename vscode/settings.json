@@ -21,10 +21,10 @@
     "window.restoreWindows": "none",
     "workbench.startupEditor": "none",
     "files.exclude": {
-        "**/bazel-*": true
+        "bazel-*/": true
     },
     "files.watcherExclude": {
-        "**/bazel-*": true
+        "bazel-*/": true
     },
     "window.newWindowDimensions": "maximized",
     "python.linting.pylintEnabled": false,
