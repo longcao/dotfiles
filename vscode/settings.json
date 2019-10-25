@@ -20,12 +20,6 @@
     "files.trimTrailingWhitespace": true,
     "window.restoreWindows": "none",
     "workbench.startupEditor": "none",
-    "files.exclude": {
-        "bazel-*/": true
-    },
-    "files.watcherExclude": {
-        "bazel-*/": true
-    },
     "window.newWindowDimensions": "maximized",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
