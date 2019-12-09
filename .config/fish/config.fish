@@ -71,3 +71,7 @@ end
 ############### OTHER INIT ###############
 # Load pyenv/rbenv automatically
 status --is-interactive; and source (pyenv init -|psub); and source (rbenv init -|psub)
+
+############### LOCAL CONFIG ###############
+source ~/.local.fish
+
