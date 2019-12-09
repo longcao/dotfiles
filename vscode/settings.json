@@ -25,5 +25,6 @@
     "python.linting.flake8Enabled": true,
     "puppet.titleBar.pdkNewModule.enable": false,
     "workbench.editor.enablePreview": false,
-    "python.linting.flake8Path": "/Users/long/.pyenv/shims/flake8"
+    "python.linting.flake8Path": "/Users/long/.pyenv/shims/flake8",
+    "terraform.codelens.enabled": false
 }
