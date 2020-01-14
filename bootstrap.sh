@@ -28,5 +28,5 @@ ln -s -f ~/"$(dirname "$0")"/.vim/colors/molokai.vim ~/.vim/colors/molokai.vim
 brew tap homebrew/bundle
 brew bundle --file=~/.dotfiles/Brewfile
 
-pyenv install 3.6.6
-pyenv install 2.7.15
+pyenv install 3.7.3
+pyenv install 2.7.17

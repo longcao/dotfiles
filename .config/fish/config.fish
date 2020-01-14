@@ -15,7 +15,7 @@ set -gx JAVA_OPTS "-XX:ReservedCodeCacheSize=256m -XX:MaxMetaspaceSize=512m"
 set -gx SBT_OPTS "-XX:ReservedCodeCacheSize=256m -Xmx4096m"
 
 # Choose specific Python version for pyenv
-set -gx PYENV_VERSION "3.6.6"
+set -gx PYENV_VERSION "3.7.3"
 
 # Don't shorten prompt_pwd directory names at all
 set -g fish_prompt_pwd_dir_length 0
