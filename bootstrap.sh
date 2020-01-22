@@ -30,3 +30,5 @@ brew bundle --file=~/.dotfiles/Brewfile
 
 pyenv install 3.7.3
 pyenv install 2.7.17
+
+nodenv install 12.10.0

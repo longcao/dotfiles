@@ -14,8 +14,11 @@ set -gx JAVA_OPTS "-XX:ReservedCodeCacheSize=256m -XX:MaxMetaspaceSize=512m"
 # sbt options since it doesn't pick up JAVA_OPTS
 set -gx SBT_OPTS "-XX:ReservedCodeCacheSize=256m -Xmx4096m"
 
-# Choose specific Python version for pyenv
+# Set specific Python version for pyenv
 set -gx PYENV_VERSION "3.7.3"
+
+# Set specific Node version for nodenv
+set -gx NODENV_VERSION "12.10.0"
 
 # Don't shorten prompt_pwd directory names at all
 set -g fish_prompt_pwd_dir_length 0
@@ -70,7 +73,9 @@ end
 
 ############### OTHER INIT ###############
 # Load pyenv/rbenv automatically
-status --is-interactive; and source (pyenv init -|psub); and source (rbenv init -|psub)
+status --is-interactive; source (pyenv init -|psub);
+status --is-interactive; source (rbenv init -|psub);
+status --is-interactive; source (nodenv init -|psub);
 
 ############### LOCAL CONFIG ###############
 source ~/.local.fish
