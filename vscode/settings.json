@@ -11,6 +11,7 @@
   "puppet.titleBar.pdkNewModule.enable": false,
   "python.formatting.blackPath": "/Users/long/.pyenv/shims/black",
   "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "/Users/long/.pyenv/shims/flake8",
   "python.linting.mypyEnabled": true,
