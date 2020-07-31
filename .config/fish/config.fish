@@ -3,7 +3,7 @@
 set -gx fish_user_paths ~/.cargo/bin $fish_user_paths
 set -gx fish_user_paths "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/" $fish_user_paths
 set -gx fish_user_paths ~/go/bin $fish_user_paths
-set -gx fish_user_paths ~/Library/Application\ Support/Coursier/bin $fish_user_paths
+set -gx fish_user_paths "~/Library/Application Support/Coursier/bin" $fish_user_paths
 
 # Make vim the default editor
 set -gx EDITOR vim
