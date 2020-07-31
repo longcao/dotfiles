@@ -38,9 +38,6 @@ abbr -a ... 'cd ../..'
 
 ############### ALIASES ###############
 
-# OS X has no `md5sum`, so use `md5` as a fallback
-alias md5sum="md5"
-
 # Copy the current directory to clipboard
 alias cpd="pwd | pbcopy"
 
