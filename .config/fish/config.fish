@@ -1,4 +1,5 @@
 ############### ENVIRONMENT VARIABLES ###############
+
 # Set fish_user_paths (which gets automatically prepended to PATH)
 set -gx fish_user_paths ~/.cargo/bin $fish_user_paths
 set -gx fish_user_paths "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/" $fish_user_paths
@@ -28,12 +29,15 @@ set fish_color_cwd yellow
 
 # Set LS_COLORS
 eval (gdircolors -c ~/.dir_colors)
+
 ############### ABBREVIATIONS ###############
+
 # Easier navigation
 abbr -a -- - 'cd -'
 abbr -a ... 'cd ../..'
 
 ############### ALIASES ###############
+
 # OS X has no `md5sum`, so use `md5` as a fallback
 alias md5sum="md5"
 
@@ -72,7 +76,8 @@ function regen
 end
 
 ############### OTHER INIT ###############
-# Load pyenv/rbenv automatically
+
+# Init language-specific versions automatically
 status --is-interactive; source (pyenv init -|psub);
 status --is-interactive; source (rbenv init -|psub);
 status --is-interactive; source (nodenv init -|psub);
