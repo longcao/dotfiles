@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+code --install-extension BazelBuild.vscode-bazel
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode-remote.remote-ssh
