@@ -9,6 +9,9 @@
       },
       "bazelbuild/tap": {
         "revision": "f9caa3cfd17cbdd89e40bbd24f6f04d58cb56cc5"
+      },
+      "coursier/formulas": {
+        "revision": "326cad32122f21e046d5f26fe93e0881593540d0"
       }
     },
     "brew": {
@@ -898,6 +901,10 @@
             }
           }
         }
+      },
+      "coursier": {
+        "version": "2.0.0-RC6-24",
+        "bottle": false
       }
     }
   },

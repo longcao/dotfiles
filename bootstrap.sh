@@ -33,3 +33,6 @@ pyenv install 3.7.3
 pyenv install 2.7.17
 
 nodenv install 12.10.0
+
+# Enable key repeat in VS Code, see https://stackoverflow.com/a/44010683
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
