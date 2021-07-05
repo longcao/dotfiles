@@ -74,9 +74,9 @@ end
 ############### OTHER INIT ###############
 
 # Init language-specific versions automatically
-status --is-interactive; source (pyenv init -|psub);
-status --is-interactive; source (rbenv init -|psub);
-status --is-interactive; source (nodenv init -|psub);
+status --is-interactive; source (pyenv init --path | psub);
+status --is-interactive; source (rbenv init - | psub);
+status --is-interactive; source (nodenv init - | psub);
 
 ############### LOCAL CONFIG ###############
 source ~/.local.fish
